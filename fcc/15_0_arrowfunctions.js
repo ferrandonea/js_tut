@@ -41,4 +41,3 @@ const squareList = (arr) =>  {
 const squaredIntegers = squareList(realNumberArray);
 console.log(squaredIntegers)
 
-
