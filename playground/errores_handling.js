@@ -56,3 +56,18 @@ try {
 catch (error) {
     console.log(error)
 }
+
+// throw es como raise parte 2
+console.log("========")
+
+try {
+    throw {
+        error : "errorDificil",
+        info : "Que es dificil este error"
+    }
+}
+catch (error) {
+    console.log(error.error)
+    console.log(error.info)
+    console.log(error)
+}
