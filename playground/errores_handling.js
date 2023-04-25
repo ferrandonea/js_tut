@@ -15,7 +15,7 @@ finally
 }
 
 console.log("========")
-// OTRA
+// OTRA PRUEBA
 try {
     otrafuncionquenoexiste()
 }
@@ -28,4 +28,31 @@ catch (error) {
 finally 
 {
     console.log("Esto se ejecuta siempre nuevamente")
+}
+
+console.log("========")
+// OTRA PRUEBA: El PODER DE FINALLY
+
+const pruebaTry = () => {
+    try {
+        return 1;
+    }
+    catch (error) {
+        return 2;
+    }
+    finally {
+        return 3; // LE GANA A TODO
+    }
+}
+
+console.log(pruebaTry())
+
+// throw es como raise
+console.log("========")
+
+try {
+    throw "Error: Inventé un error"
+}
+catch (error) {
+    console.log(error)
 }
